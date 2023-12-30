@@ -12,28 +12,28 @@ function App() {
   const [movies, setMovies] = useState();
 
   const getMovies = async () => {
-  try {
-    const response = await api.get("/api/v1/movies")
-    setMovies(response.data);
-  } catch(err) {
-    console.log(err);
-  }
+    try {
+      const response = await api.get("/api/v1/movies")
+      setMovies(response.data);
+    } catch(err) {
+      console.log(err);
+    }
   }
 
   useEffect(() => {
-  getMovies();
+    getMovies();
   }, [])
 
   return (
-  <div className="App">
-    <Header/>
-    <Routes>
-    <Route path='/' element={<Layout/>}>
-      <Route path='/' element={<Home movies={movies}/>}/>
-      <Route path='/Trailer/:youtubeID' element={<Trailer/>}/>
-    </Route>
-    </Routes>
-  </div>
+    <div className="App">
+      <Header/>
+      <Routes>
+      <Route path='/' element={<Layout/>}>
+        <Route path='/' element={<Home movies={movies}/>}/>
+        <Route path='/Trailer/:youtubeID' element={<Trailer/>}/>
+      </Route>
+      </Routes>
+    </div>
   );
 }
 

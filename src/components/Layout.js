@@ -4,9 +4,9 @@ import React from 'react'
 
 export const Layout = () => {
   return (
-  <main>
-    <Outlet/>
-  </main>
+    <main>
+      <Outlet/>
+    </main>
   )
 }
 
