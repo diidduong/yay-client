@@ -5,6 +5,7 @@ import { Layout } from './components/Layout';
 import Home from './components/home/Home';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
+import Trailer from './components/trailer/Trailer';
 
 function App() {
 
@@ -28,9 +29,8 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Layout/>}>
-          <Route path='/' element={<Home movies={movies}/>}>
-
-          </Route>
+          <Route path='/' element={<Home movies={movies}/>}/>
+          <Route path='/Trailer/:youtubeID' element={<Trailer/>}/>
         </Route>
       </Routes>
     </div>
