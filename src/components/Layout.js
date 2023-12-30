@@ -5,7 +5,7 @@ import React from 'react'
 export const Layout = () => {
   return (
     <main>
-        <Outlet/>
+      <Outlet/>
     </main>
   )
 }
