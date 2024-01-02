@@ -2,6 +2,9 @@
 
 A Front-end code of a Full-stack Project (Movie API Webapp) that summarizes my skills and experience as a Software Engineer. Back-end code can be found at https://github.com/diidduong/yay-server
 
+## Management Tool
+I use **Jira** integrated with **Github Cloud** to manage this project's tasks.
+
 ## Requirements
 NodeJS 20.10.0 https://nodejs.org/en
 
